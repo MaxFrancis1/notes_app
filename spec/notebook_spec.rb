@@ -29,8 +29,8 @@ describe Notebook do
     
       notebook = Notebook.new
       notebook.add('Title_test', 'Body_test')
-      notebook.display_text('title_test')
-      expect(notebook.display_text('title_test')).to eq('Body_test')
+      notebook.display_text('Title_test')
+      expect(notebook.display_text('Title_test')).to eql("Body_test")
       
     end
   end

@@ -15,7 +15,7 @@ class Notebook
   end
   
   def display_text(display_title)
-    return @book[display_title]
+    @book[:"#{display_title}"]
   end
   
   def view
