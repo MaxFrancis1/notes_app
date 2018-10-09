@@ -10,15 +10,15 @@ class Notebook
     @book[:"#{title}"] = body
   end
   
-  def display
+  def print_titles
     return @titles
   end
   
-  def display_text(display_title)
+  def print_note_bodies(display_title)
     @book[:"#{display_title}"]
   end
   
-  def view
+  def print_notebook
     return @book 
   end
   
